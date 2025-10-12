@@ -1,0 +1,8 @@
+.rform-checkboxbtn-container {display: flex;align-items: center;font-size: 16px;flex-direction: row;gap: .375rem;}
+.rform-checkbox-button {display: flex;flex-direction: row;flex-wrap: wrap;}
+.rform-checkboxbtn-container input {opacity: 0;cursor: pointer;width: 0;}
+.rform-checkbox-checkmark {position: relative;display: inline-flex;aspect-ratio: 1/1;width: 20px;background-color: #eee;justify-content: center;align-items: center;}
+.rform-checkboxbtn-container:hover input ~ .rform-checkbox-checkmark {background-color: #ccc;}
+.rform-checkboxbtn-container input:checked ~ .rform-checkbox-checkmark {background-color: #2196f3;}
+.rform-checkbox-checkmark:after {content: "✓";position: absolute;display: none;font-weight: bolder;}
+.rform-checkboxbtn-container input:checked ~ .rform-checkbox-checkmark:after {display: block;}
