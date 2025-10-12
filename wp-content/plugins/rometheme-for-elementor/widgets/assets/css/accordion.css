@@ -1,0 +1,12 @@
+.rkit-accordion {display: flex;flex-direction: column;gap: .5rem;}
+.rkit-accordion-header {padding: 10px;background-color: #ebebeb;color: #000;cursor: pointer;display: flex;flex-direction: row;justify-content: space-between;align-items: center;transition: all .5s;position: relative;}
+.rkit-accordion-header:hover {z-index: 2;}
+.rkit-accordion-item.open .rkit-accordion__title {color: #0139f2;}
+.rkit-accordion-content {max-height: 0vm ax;height: auto;visibility: hidden;overflow: hidden;transition: all .3s;}
+.rkit-accordion__icon {display: flex;align-items: center;justify-content: center;margin: 0px 20px 0px 20px;transition: all .5s;flex-shrink: 0;}
+.rkit-accordion__title {width: 100%;text-align: left;padding: 0px 0px 0px 20px;transition: all .5s;}
+.rkit-accordion__content {padding: 30px 30px 30px 30px;text-align: left;}
+.rkit-accordion-item.open .rkit-accordion-content {visibility: visible;max-height: 100vm ax;transition: all 1.5s;}
+.rkit-accordion-item .rkit-accordion__icon .icon_open {display: none;}
+.rkit-accordion-item.open .rkit-accordion__icon .icon_close {display: none;}
+.rkit-accordion-item.open .rkit-accordion__icon .icon_open {display: block;}
